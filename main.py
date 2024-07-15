@@ -16,5 +16,7 @@ def convertToSpeech(text):
 
 for i in range(10):
     num = (int) (random.random() * len(questions))
+    print(f'Question {i + 1}')
     convertToSpeech(f'Question {i + 1}')
+    print(questions[num])
     convertToSpeech(questions[num])
